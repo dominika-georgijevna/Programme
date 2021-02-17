@@ -1,11 +1,15 @@
 print("Geben Sie Ihr Gehalt in Euro ein:")
-gehalt=int(input())
+gehalt=float(input())
 steuer=float()
-if gehalt>4000:
-    steuer=float(0.26)
-elif gehalt>2500<4000:
-    steuer=float(0.22)
+print("Geben Sie Ihren Familienstand ein"
+      + " (1=ledig, 2=verheiratet):")
+familienstand=int(input())
+
+if gehalt>4000 and familienstand==1:
+    steuerbetrag=gehalt*0.26
+elif gehalt<= 4000 and familienstand == 2:
+    steuerbetrag = gehalt * 0.18
 else:
-    steuer=float(0.18)
-summe= gehalt * steuer
-print("Es ergibt sich eine Steuer von ", summe, "Euro")
+    steuerbetrag = gehalt * 0.22
+
+print("Es ergibt sich eine Steuer von", steuerbetrag, "Euro")
