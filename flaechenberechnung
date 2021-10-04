@@ -1,0 +1,23 @@
+<html>
+	<head>
+	<h1>Flächenberechnung</h1>
+	</head>
+	<body>
+		<form action="" method="POST">
+			
+		
+        <label for="">Bitte Länge und Breite eingeben:</label><br>
+            <input type="number" name="laenge"><br>
+            <input type="number" name="breite"><br>
+            <button type="submit" name="senden" value="">Senden</button>
+
+		</form>
+
+	        <?php 
+            if(!empty($_POST["senden"]))
+            {
+                echo("Die Fläche ist: " . $_POST["laenge"] * $_POST["breite"] . "");
+            }
+            ?>
+	</body>
+</html>
