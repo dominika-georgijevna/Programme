@@ -9,15 +9,15 @@ class NeueKlasse{
     private $laenge;
     private $breite;
 
-   public function berechneFlaeche($breite, $laenge){
+   function berechneFlaeche($breite, $laenge){
         $flaeche = $laenge * $breite;
         return $flaeche;
     }
 
-    public function setLaenge($_laenge){
+    function setLaenge($_laenge){
         $this->laenge = $_laenge;
     }
-    public function setBreite($_breite){
+    function setBreite($_breite){
         $this->breite = $_breite;
     }
 
