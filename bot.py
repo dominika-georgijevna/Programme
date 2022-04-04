@@ -1,7 +1,7 @@
 import discord
 from random import randrange
 
-sad_words = ["sad", "depressed", "unhappy", "angry", "miserable"]
+sad_words = ["traurig", "deprimiert", "unglücklich", "sauer"]
 
 class MyClient(discord.Client):
     
