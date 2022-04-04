@@ -38,4 +38,4 @@ class MyClient(discord.Client):
                 await message.channel.send("Sei nicht traurig!")
             
 client = MyClient()
-client.run('OTUyODcyNzczNDE0NDQ5MTUz.Yi8V7A.j0wN12sp_VxwZxd9fWlTTtiJMjo')
+client.run('TOKEN')
